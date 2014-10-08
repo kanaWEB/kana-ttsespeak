@@ -1,0 +1,2 @@
+#!/bin/bash
+espeak -s 130 -v $1 "$2" --stdout|aplay
