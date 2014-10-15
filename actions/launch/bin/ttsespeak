@@ -1,2 +1,19 @@
-#!/bin/bash
-espeak -s 130 -v $1 "$2" --stdout|aplay
+#!/bin/sh
+lang=$1
+text=$2
+pitch=40
+speed=130
+
+#dirty fix for french phoneme acting weird from web interface
+#while in command line it works great
+#I search for encoding problems but I haven't found any solution
+
+if [ $lang = "fr" ]
+	then
+	text=$(echo "$text" |sed "s/é/ai/g")
+	text=$(echo "$text" |sed "s/è/ai/g")
+	text=$(echo "$text" |sed "s/à/a/g")
+	text=$(echo "$text" |sed "s/ù/u/g")
+fi
+echo $text > /tmp/log
+/usr/bin/espeak -p $pitch -s $speed -v $lang "$text" --stdout|aplay

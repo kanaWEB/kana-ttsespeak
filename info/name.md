@@ -1,1 +1,1 @@
-Notifications vocales
+Vocal notifications (espeak)
