@@ -1,0 +1,11 @@
+{
+   "description" : "Faites parler votre Raspberry Pi avec une voix robotique grâce à espeak",
+   "name" : "Notifications vocales (espeak)",
+   "tags" : {
+      "voice" : {},
+      "notification" : {},
+      "tts" : {},
+      "espeak" : {}
+   },
+   "type" : "notification"
+}

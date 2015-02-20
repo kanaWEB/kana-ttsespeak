@@ -1,1 +1,0 @@
-Faites parler votre Raspberry Pi avec une voix robotique grâce à espeak

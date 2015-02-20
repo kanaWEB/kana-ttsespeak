@@ -1,0 +1,12 @@
+{
+   "default" : {
+      "args" : {
+         "lang" : {
+            "type" : "Core"
+         },
+         "text" : {}
+      },
+      "command" : "ttsespeak",
+      "usage" : "ttsespeak lang text"
+   }
+}
