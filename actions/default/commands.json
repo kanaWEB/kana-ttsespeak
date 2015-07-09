@@ -6,7 +6,7 @@
          },
          "text" : {}
       },
-      "command" : "ttsespeak",
+      "command" : "/opt/piget/tts/ttsEspeak",
       "usage" : "ttsespeak lang text"
    }
 }
